@@ -34,7 +34,11 @@ L.mapbox.accessToken = 'pk.eyJ1IjoidmlyZ2luaWFoYW5nIiwiYSI6ImNpemc0aHFzbTAwcmszM
 
 	function onEachFeature(feature, layer) {
     if (feature.properties) {
-        layer.bindPopup("<b>" + feature.properties.Point + "</b> is located at " + feature.geometry.coordinates + "  lat/long.");
+        layer.bindPopup("<b>"
+				+ feature.properties.Point
+				+ "</b> is located at "
+				+ feature.geometry.coordinates
+				+ "  lat/long.");
     }
 	}
 	var points = new L.geoJson(coffeepoints, {
