@@ -45,7 +45,7 @@
 				+ feature.properties.name
 				+ "<br /> </b> Coffee prices are not listed for this location.");}}
 
-	var coffeeshop = new L.geoJson(coffeepoints, {
+	var points = new L.geoJson(coffeepoints, {
 			onEachFeature: onEachFeature
 			}).addTo(mymap);
 
